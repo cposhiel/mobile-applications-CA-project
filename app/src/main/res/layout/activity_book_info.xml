@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.BooksInformationActivity"
+    android:background="@drawable/home_backgroundimg">
+
+    <LinearLayout
+        android:background="@color/mostly_transparentColorAccent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/book_info_name"
+            style="@style/App_TextStyle"
+            android:layout_width="wrap_content"
+            android:textSize="25sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1.00"
+        android:orientation="horizontal"
+        android:layout_marginBottom="7dp">
+        <TextView
+            android:text="@string/author"
+            style="@style/Book_Info_TextStyle"
+            android:layout_weight=".2"/>
+        <TextView
+            android:id="@+id/book_info_author"
+            style="@style/Book_Info_TextStyle"
+            android:layout_weight=".8"
+
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1.00"
+        android:orientation="horizontal"
+        android:layout_marginBottom="7dp">
+        <TextView
+            android:text="@string/isbn"
+            style="@style/Book_Info_TextStyle"
+            android:layout_weight=".2"/>
+        <TextView
+            android:id="@+id/book_info_isbn"
+            style="@style/Book_Info_TextStyle"
+            android:layout_weight=".8"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1.00"
+        android:orientation="horizontal"
+        android:layout_marginBottom="7dp">
+        <TextView
+            android:text="@string/edition"
+            style="@style/Book_Info_TextStyle"
+            android:layout_weight=".2"/>
+        <TextView
+            android:id="@+id/book_info_edition"
+            style="@style/Book_Info_TextStyle"
+            android:layout_weight=".8"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1.00"
+        android:orientation="horizontal"
+        android:layout_marginBottom="7dp">
+        <TextView
+            android:text="@string/volume"
+            style="@style/Book_Info_TextStyle"
+            android:layout_weight=".2"/>
+        <TextView
+            android:id="@+id/book_info_volume"
+            style="@style/Book_Info_TextStyle"
+            android:layout_weight=".8"/>
+    </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/book_info_recycler_view"
+            android:scrollbars="none"/>
+
+
+    </LinearLayout>
+
+
+    <!--    by Conal O'Shiel (10523829)-->
+
+</ScrollView>
